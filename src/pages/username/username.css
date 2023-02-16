@@ -1,0 +1,314 @@
+.App {
+    background: rgb(234,218,212);
+    background: linear-gradient(125deg, rgba(234,218,212,1) 0%, rgba(212,219,227,1) 25%, rgba(230,229,210,1) 50%, rgba(235,224,209,1) 75%, rgba(218,228,218,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .appContent{
+    display: flex;
+    flex-direction: column;
+    width: 34.4vw;
+    height: 59%;
+    justify-content: center;
+    align-items: flex-start;
+    /* margin-top: -50px; */
+    background-color: white;
+  }
+
+  .loader{
+    /* border: 1px solid yellow; */
+    width: 438px;
+    height: 10px;
+    position: relative;
+    top: -13px;
+    /* margin-top: -67px; */
+  }
+  /* .loader > img{
+    width: 100%;
+  } */
+  
+  .logo{
+    width: 25px;
+    height: 25px;
+    margin-right: 0.3rem;
+  }
+  .logoContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .content{
+    line-height: 1.5;
+    margin-left: 40px;
+    width: 100%;
+    font-size: 13px;
+  }
+  
+  .input{
+    width: 80%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom:1px solid black;
+    background-color: #fff;
+    padding: 5px 0px;
+  }
+  input::placeholder{
+    font-size: 0.90rem;
+    font-weight: 200;
+  }
+  input:focus {
+    outline: none;
+    border-bottom:1px solid black;
+  }
+  input:hover {
+    outline: none;
+    border-bottom:1px solid #4B65FF;
+  }
+  .innerContainer{
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    width: 34.4vw;
+    height: 9%;
+    margin-top: 20px;
+    padding: 10px 40px;
+  }
+  .innerContent{
+    margin-left: 20px;
+    font-size: 1rem;
+    margin-top: 2px;
+    font-weight: 100;
+    color: "#8c8c8c"
+  }
+  .keyLogo{
+    width:30px;
+    height: 25px;  
+  }
+  .keyLogo:hover{
+    background-color: #Dddee0;
+  }
+  .innerContainer:hover{
+    cursor: pointer;
+    background-color: #Dddee0;
+  }
+  .controls{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: 9px; */
+    cursor: pointer;
+  }
+  .controls > button {
+    border: none;
+    margin-left: 5px;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+  }
+  .btn1{
+    background-color: #C0c6c9;
+  }
+  .btn{
+    margin-right: 48px;
+    background-color: #2b78b1;
+    color: white;
+    
+  }
+
+  .conditions{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom:0;
+    right: 1%;
+    /* bottom: 0;
+    right: 0; */
+  }
+  .conditions > h5{
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  @media only screen and (max-width: 600px){
+    .App{
+      background: #fff;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .userOpaque{
+      opacity: 0.5;
+    }
+
+    .appContent{
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      height: 59%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      background-color: white;
+    }
+    .loader{
+      width: 438px;
+      height: 10px;
+      position: relative;
+      top: 1px;
+    }
+
+    .logoContent{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 40px;
+    }
+
+    .innerContainer{
+      border: 1px solid grey;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 95vw;
+      height: 6%;
+      /* margin-top: 20px;
+      padding: 10px 40px; */
+    }
+
+    .innerContainer:hover{
+      cursor: pointer;
+      background-color: grey;
+    }
+
+    .innerContent{
+      margin-left: 20px;
+      font-size: 1rem;
+      margin-top: 15px;
+      font-weight: 100;
+      color: "#8c8c8c"
+    }
+
+    .conditions{
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      bottom:0;
+      left: 3%;
+    }
+    .conditions > h5{
+      margin-right: 15px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 9000px) and (min-width: 601px)  {
+    .App{
+      background: rgb(234,218,212);
+      background: linear-gradient(125deg, rgba(234,218,212,1) 0%, rgba(212,219,227,1) 25%, rgba(230,229,210,1) 50%, rgba(235,224,209,1) 75%, rgba(218,228,218,1) 100%);
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .userOpaque{
+      opacity:0.5;
+      display: flex;
+      flex-direction: column;
+      width: 430px;
+      height: 59%;
+      justify-content: center;
+      align-items: flex-start;
+      /* margin-top: -50px; */
+      background-color: white;
+    }
+
+    .appContent{
+      display: flex;
+      flex-direction: column;
+      width: 430px;
+      height: 59%;
+      justify-content: center;
+      align-items: flex-start;
+      /* margin-top: -50px; */
+      background-color: white;
+    }
+
+    .loader{
+      /* overflow-x: hidden; */
+      width: 425px;
+      height: 10px;
+      position: relative;
+      top: -10px;
+    }
+
+    .innerContainer{
+      border: none;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 430px;
+      height: 6%;
+      /* margin-top: 20px;
+      padding: 10px 40px; */
+    }
+
+    .innerContainer:hover{
+      cursor: pointer;
+      background-color: grey;
+    }
+    .innerContent{
+      margin-left: 20px;
+      font-size: 1rem;
+      margin-top: 15px;
+      font-weight: 100;
+      color: "#8c8c8c"
+    }
+    .conditions{
+      /* border: 1px solid red; */
+      height: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      bottom:0;
+      right: 6%;
+    }
+    .conditions > h5{
+      margin-right: 15px;
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+  
+  
